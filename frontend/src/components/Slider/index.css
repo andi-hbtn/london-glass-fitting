@@ -1,0 +1,232 @@
+/* index.css */
+.collection-slider {
+    width: 93%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    background: #0a1929;
+    margin: 0 auto 60px auto;
+}
+
+.slider-inner {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.8s ease-in-out;
+}
+
+.slider-content {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 20px;
+    z-index: 2;
+}
+
+.slider-text {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    color: white;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.slider-text h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.slider-text .subtitle {
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+    opacity: 0.9;
+}
+
+.slider-text .description {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+/* Slider Controls */
+.slider-controls {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.slider-arrow {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+}
+
+.slider-arrow:hover {
+    background: #c19a6b;
+    transform: scale(1.1);
+}
+
+.slider-pagination {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.pagination-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #0a1929;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    padding: 0;
+}
+
+.pagination-dot.active {
+    background: #0a1929;
+    transform: scale(1.2);
+}
+
+
+/* Responsive Design */
+@media (max-width: 1199px) {
+    .slider-text h2 {
+        font-size: 3rem;
+    }
+
+    .slider-text .subtitle {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .collection-slider,
+    .slider-inner {
+        height: 60vh;
+    }
+
+    .slider-text h2 {
+        font-size: 2.5rem;
+    }
+
+    .slider-text .subtitle {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .collection-slider,
+    .slider-inner {
+        height: 50vh;
+    }
+
+    .slider-text {
+        padding: 25px;
+    }
+
+    .slider-text h2 {
+        font-size: 2rem;
+    }
+
+    .slider-text .subtitle {
+        font-size: 1.1rem;
+    }
+
+    .slider-text .description {
+        font-size: 1rem;
+    }
+
+    .slider-controls {
+        padding: 0 10px;
+        bottom: 20px;
+    }
+
+    .slider-arrow {
+        width: 40px;
+        height: 40px;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 575px) {
+
+    .collection-slider,
+    .slider-inner {
+        height: 45vh;
+    }
+
+    .slider-text h2 {
+        font-size: 1.7rem;
+    }
+
+    .slider-text {
+        padding: 15px;
+    }
+
+    .slider-controls {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .slider-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .slider-arrow.prev {
+        left: 10px;
+    }
+
+    .slider-arrow.next {
+        right: 10px;
+    }
+
+    .slider-pagination {
+        position: relative;
+        top: 25px;
+    }
+}

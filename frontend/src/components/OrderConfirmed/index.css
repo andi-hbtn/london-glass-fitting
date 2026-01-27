@@ -1,0 +1,9 @@
+.success-title,
+.success-message {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.success-actions>a {
+    margin: 20px;
+}

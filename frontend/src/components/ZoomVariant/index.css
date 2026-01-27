@@ -1,0 +1,145 @@
+/* Add to your index.css */
+
+/* Image Modal */
+.image-modal .modal-content {
+    background-color: rgba(10, 25, 41, 0.95);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.modal-header-custom {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 15px 20px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.modal-header-custom .btn-close {
+    filter: invert(1);
+    opacity: 0.8;
+}
+
+.modal-header-custom .btn-close:hover {
+    opacity: 1;
+}
+
+.modal-body-custom {
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.zoomed-image-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.zoomed-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.zoom-controls {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.zoom-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    border-radius: 4px;
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+.zoom-btn:hover {
+    background: #c19a6b;
+    border-color: #c19a6b;
+}
+
+.zoom-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.zoom-level {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+    margin-left: 10px;
+}
+
+/* Zoom hint on main image */
+.zoom-hint {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 10;
+}
+
+.image-wrapper:hover .zoom-hint {
+    opacity: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .modal-body-custom {
+        height: 60vh;
+    }
+}
+
+@media (max-width: 767px) {
+    .modal-body-custom {
+        height: 50vh;
+    }
+
+    .zoom-controls {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .zoom-level {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 575px) {
+    .modal-body-custom {
+        height: 40vh;
+    }
+
+    .zoom-btn {
+        padding: 6px 10px;
+        font-size: 0.85rem;
+    }
+
+    .zoom-hint {
+        font-size: 0.75rem;
+        padding: 3px 8px;
+    }
+}

@@ -1,0 +1,26 @@
+/* Add to your existing CSS */
+.bi-shield-lock {
+    color: #012440;
+}
+
+.hover-shadow {
+    transition: box-shadow 0.3s ease;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.border-primary {
+    border-color: #012440 !important;
+}
+
+.btn-primary {
+    background-color: #012440;
+    transition: opacity 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #012440;
+    opacity: 0.9;
+}

@@ -1,0 +1,64 @@
+orderData---- OrderDto {
+  user_id: 0,
+  items: [ { product_id: 9, quantity: 3 }, { product_id: 10, quantity: 3 } ],
+  total_price: 390,
+  status: 'pending',
+  created_at: '2025-06-20 19:58:12',
+  firstname: 'asd',
+  lastname: 'asd',
+  email: 'test.test@gmail.com',
+  phone: '465',
+  country: 'united-kingdom',
+  town: 'asd',
+  zipCode: 'asd',
+  street_address: 'asd',
+  appartment: 'asd',
+  message: ''
+}
+items----- [ { product_id: 9, quantity: 3 }, { product_id: 10, quantity: 3 } ]
+item-in for---- { product_id: 9, quantity: 3 }
+item-in for---- { product_id: 10, quantity: 3 }
+orderItems---- [
+  OrderItemEntity {
+    quantity: 3,
+    price: 80,
+    order: OrderEntity {
+      id: 21,
+      total_price: 390,
+      status: 'pending',
+      created_at: '2025-06-20 19:58:12',
+      user: null
+    },
+    product: ProductEntity {
+      id: 9,
+      title: 'prod glass ',
+      description: 'prod glass ',
+      price: 80,
+      stock: 77,
+      is_active: true,
+      image: 'glass_adapters202551213476.png',
+      category_id: 2
+    }
+  },
+  OrderItemEntity {
+    quantity: 3,
+    price: 50,
+    order: OrderEntity {
+      id: 21,
+      total_price: 390,
+      status: 'pending',
+      created_at: '2025-06-20 19:58:12',
+      user: null
+    },
+    product: ProductEntity {
+      id: 10,
+      title: 'test',
+      description: 'test',
+      price: 50,
+      stock: 47,
+      is_active: true,
+      image: 'glass_adapters202552017748.png',
+      category_id: 3
+    }
+  }
+]

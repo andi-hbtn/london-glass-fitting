@@ -1,0 +1,61 @@
+.login-btn {
+    display: block !important;
+    width: 50%;
+    margin: 0 auto !important;
+}
+
+input:focus {
+    box-shadow: none !important;
+}
+
+input:-webkit-autofill {
+    box-shadow: 0 0 0px 1000px white inset !important;
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+    background-color: white !important;
+    color: #000 !important;
+}
+
+.forgot-pass {
+    text-align: center;
+}
+
+.forgot-pass a {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.register-section {
+    text-align: center;
+    margin: 15px;
+    font-size: 14px;
+    color: #555;
+}
+
+.register-section a {
+    color: #000000;
+    ;
+    /* ngjyra e butonit kryesor/brand */
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 5px;
+}
+
+.register-section a:hover {
+    text-decoration: underline;
+}
+
+
+@media screen and (min-device-width: 320px) and (max-device-width: 768px) {
+
+    .forgot-pass>a {
+        width: auto;
+    }
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 375px) {
+
+    .register-section>span,
+    .register-section>a {
+        display: inline-block !important;
+    }
+}

@@ -1,0 +1,30 @@
+.category-table td {
+    vertical-align: middle;
+}
+
+.category-img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.date-badge {
+    font-weight: 400;
+    padding: 6px 10px;
+    background-color: #e9ecef !important;
+    color: #495057 !important;
+}
+
+.action-btn {
+    border-radius: 8px;
+    padding: 8px 12px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.category-table .table-row:hover {
+    background-color: #f8f9fa;
+    cursor: pointer;
+}

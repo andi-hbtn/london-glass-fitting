@@ -1,0 +1,75 @@
+.main-cnt {
+    width: 100%;
+    background-color: #e8edef;
+    margin-bottom: 20px;
+}
+
+.slogan-cnt>h3 {
+    font-size: 18px;
+    font-style: italic;
+    text-align: center;
+    color: #475e68;
+    margin: 0px;
+    padding: 5px;
+}
+
+.logo-container {
+    text-align: center;
+    margin: 0px 0px 15px 0px;
+    padding: 0px 0px 15px 0px;
+    border-bottom: 2px solid #d5dee3;
+}
+
+.slogan-cnt::before {
+    content: "";
+    position: absolute;
+    border: 12px solid transparent;
+    border-top-color: #e8edef;
+    margin-left: 50%;
+    top: 31px;
+}
+
+.logo-container>a>img {
+    width: 300px;
+    height: 51px;
+    margin: 0 auto;
+}
+
+.menu-search-cnt {
+    width: 100%;
+}
+
+.menu-cnt>a {
+    margin-right: 10px;
+    font-size: 15px;
+    line-height: 1.2em;
+    font-family: 'Ubuntu', sans-serif;
+    color: #a3aaad;
+    background: none;
+    text-transform: uppercase;
+}
+
+.menu-cnt>a:hover {
+    border-bottom: 2px solid #d5dee3;
+}
+
+.menu-cnt>a {
+    display: flex !important;
+    align-items: center;
+    gap: 5px;
+}
+
+.cart-link {
+    position: relative;
+}
+
+.cart-link>svg {
+    font-size: 20px;
+}
+
+.cart-total-number {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: #012440;
+}
