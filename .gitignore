@@ -4,3 +4,4 @@ backend/uploads
 backend/.env
 frontend/.env
 frontend/node_modules/
+.gitignore
