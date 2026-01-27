@@ -1,5 +1,4 @@
 import { Modal, Button } from 'react-bootstrap';
-
 const ConfirmDeleteModal = ({ open, close, onConfirm }) => {
     return (
         <Modal
@@ -10,7 +9,6 @@ const ConfirmDeleteModal = ({ open, close, onConfirm }) => {
             <Modal.Header closeButton>
                 <Modal.Title>Delete Category</Modal.Title>
             </Modal.Header>
-
             <Modal.Body>
                 <p className="mb-0">
                     Are you sure you want to delete this category?
