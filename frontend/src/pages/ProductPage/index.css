@@ -249,7 +249,7 @@
 .color-variants {
     display: flex;
     flex-wrap: wrap;
-    gap: 1.25rem;
+    gap: 10px;
 }
 
 .color-variant {
@@ -476,7 +476,7 @@
     }
 }
 
-@media(max-width:425px) {
+@media(max-width:576px) {
 
     .main-image-container {
         width: 320px;
@@ -511,6 +511,14 @@
 
     .product-page-container {
         padding-bottom: 10px;
+    }
+
+    .color-variant.selected .color-swatch-container {
+        border-color: #dee2e6;
+    }
+
+    .quantity-selector {
+        justify-content: space-between;
     }
 
 }

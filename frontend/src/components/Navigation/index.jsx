@@ -52,11 +52,11 @@ const Navigation = ({ onSearchChange }) => {
                 <Container className="nav-cnt">
                     {/* Mobile Menu Toggle */}
 
-
                     <div className='mobile-menu-container'>
                         <Button
                             className="mobile-menu-toggle"
                             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                            variant='dark'
                         >
                             {mobileMenuOpen ? <IoMdClose /> : <FaBars />}
                         </Button>

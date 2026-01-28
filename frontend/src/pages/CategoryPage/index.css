@@ -207,20 +207,16 @@
 }
 
 
-
 /* =====================================================
    RESPONSIVE
 ===================================================== */
 
-@media (max-width: 768px) {
-    .card-image-container img {
-        height: 240px;
-    }
-}
-
 @media (max-width: 576px) {
     .card-image-container img {
-        height: 220px;
+        margin: 0 auto;
+        display: block;
+        width: 240px;
+        height: 224px;
     }
 
     .premium-cart-section {

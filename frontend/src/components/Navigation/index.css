@@ -21,7 +21,7 @@
     top: 30px;
     left: 0;
     width: 300px;
-    max-height: 360px;
+    max-height: 480px;
     /* 👈 kufizon lartësinë */
     background: #fff;
     border-radius: 14px;
@@ -306,4 +306,16 @@
         width: 100%;
         justify-content: space-between;
     }
+
+    .mobile-menu-container>button {
+        font-size: 25px;
+        background-color: #ffffff !important;
+        color: #000000 !important;
+        border: 0px;
+    }
+
+}
+
+@media(max-width:576px) {
+    .mobile-menu-toggle {}
 }

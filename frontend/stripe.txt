@@ -1,0 +1,26 @@
+Visa
+4242 4242 4242 4242
+
+Mastercard
+5555 5555 5555 4444
+
+American Express (Amex)
+3782 822463 10005
+
+Discover
+3566 1111 1111 1113
+
+Expiry Date
+12 / 34
+
+Visa/Mastercard/Discover/JCB ---- CVC / CVV
+→ 123
+Amex → 1234
+
+Name on Card
+John Doe
+
+
+Delete from stripe the transaction
+It will delete ALL your products as well
+Developer > Overview > Review Test Data > Delete
