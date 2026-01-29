@@ -317,5 +317,5 @@
 }
 
 @media(max-width:576px) {
-    .mobile-menu-toggle {}
+    .profile-dropdown {left: 0%;}
 }

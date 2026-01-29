@@ -509,6 +509,10 @@
         margin-top: 10px;
     }
 
+    .color-variants {
+        flex-wrap: unset !important;
+    }
+
     .product-page-container {
         padding-bottom: 10px;
     }
